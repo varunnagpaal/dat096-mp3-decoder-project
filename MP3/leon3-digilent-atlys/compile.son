@@ -1,0 +1,5 @@
+	vhdlp -s -work  grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/version.vhd
+	vhdlp -s -work  grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/config.vhd
+	vhdlp -s -work  grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdlib.vhd
+	vhdlp -s -work  grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdio.vhd
+	vhdlp -s -work  grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/testlib.vhd

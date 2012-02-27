@@ -1,0 +1,27 @@
+[library]
+name = grlib
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/version.vhd
+ []
+ [file]
+  name = /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/config.vhd
+ []
+ [file]
+  name = /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdlib.vhd
+ []
+ [file]
+  name = /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdio.vhd
+ []
+ [file]
+  name = /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/testlib.vhd
+ []
+ [file]
+  name = /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/util/util.vhd
+ []

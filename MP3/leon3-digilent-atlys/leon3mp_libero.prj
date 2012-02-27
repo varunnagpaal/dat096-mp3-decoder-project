@@ -1,0 +1,14 @@
+KEY LIBERO "9.1"
+KEY CAPTURE "9.1.1.5"
+KEY HDLTechnology "VHDL"
+KEY VendorTechnology_Family "Spartan6"
+KEY VendorTechnology_Die ""
+KEY VendorTechnology_Package ""
+KEY ProjectLocation "."
+KEY SimulationType "VHDL"
+KEY Vendor "Actel"
+KEY ActiveRoot "leon3mp"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST

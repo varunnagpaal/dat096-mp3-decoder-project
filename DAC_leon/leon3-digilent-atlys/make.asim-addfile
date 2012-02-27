@@ -1,0 +1,18 @@
+
+addfile -vhdl ../../mig37/mig_37/user_design/rtl/iodrp_controller.vhd
+addfile -vhdl ../../mig37/mig_37/user_design/rtl/iodrp_mcb_controller.vhd
+addfile -vhdl ../../mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd
+addfile -vhdl ../../mig37/mig_37/user_design/rtl/mcb_soft_calibration.vhd
+addfile -vhdl ../../mig37/mig_37/user_design/rtl/mcb_soft_calibration_top.vhd
+addfile -vhdl ../../mig37/mig_37/user_design/rtl/memc3_infrastructure.vhd
+addfile -vhdl ../../mig37/mig_37/user_design/rtl/memc3_wrapper.vhd
+addfile -vhdl ../../mig37/mig_37/user_design/rtl/mig_37.vhd
+addfile -vhdl ../../config.vhd
+addfile -vhdl ../../ahbrom.vhd
+addfile -vhdl ../../ahb2mig_sp601.vhd
+addfile -vhdl ../../led_pkg.vhd
+addfile -vhdl ../../ledmod.vhd
+addfile -vhdl ../../adder_pkg.vhd
+addfile -vhdl ../../SKadder.vhd
+addfile -vhdl ../../leon3mp.vhd
+addfile -vhdl ../../testbench.vhd

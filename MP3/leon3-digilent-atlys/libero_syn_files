@@ -1,0 +1,26 @@
+LIST FileManager
+VALUE "<project>//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/version.vhd,hdl"
+STATE="utd"
+TIME="1310766027"
+LIBRARY="grlib"
+ENDFILE
+VALUE "<project>//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/config.vhd,hdl"
+STATE="utd"
+TIME="1310766027"
+LIBRARY="grlib"
+ENDFILE
+VALUE "<project>//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdlib.vhd,hdl"
+STATE="utd"
+TIME="1310766027"
+LIBRARY="grlib"
+ENDFILE
+VALUE "<project>//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdio.vhd,hdl"
+STATE="utd"
+TIME="1310766027"
+LIBRARY="grlib"
+ENDFILE
+VALUE "<project>//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/testlib.vhd,hdl"
+STATE="utd"
+TIME="1310766027"
+LIBRARY="grlib"
+ENDFILE

@@ -1,0 +1,4 @@
+set_attribute input_pragma_keyword "cadence synopsys get2chip g2c fast ambit pragma"
+read_hdl -vhdl -lib grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/version.vhd
+read_hdl -vhdl -lib grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/config.vhd
+read_hdl -vhdl -lib grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdlib.vhd

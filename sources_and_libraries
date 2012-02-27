@@ -1,0 +1,15 @@
+#C cross compiler
+
+PATH=/chalmers/sw/unsup64/rtems-4.10/bin:$PATH
+LD_LIBRARY_PATH=/chalmers/sw/unsup64/gmp-5.0.2/lib:/chalmers/sw/unsup64/mpfr-2.4.2/lib:/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib:${LD_LIBRARY_PATH}
+sparc-rtems-gcc -o led led.c
+
+#VHDL Compiler and Synthesizer
+
+source /chalmers/sw/sup/xil/13.2/ISE_DS/settings64.sh
+make ise
+
+#Connect to FPGA
+
+PATH=/chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/bin:$PATH
+grmon -eth -u -ip 129.16.21.224

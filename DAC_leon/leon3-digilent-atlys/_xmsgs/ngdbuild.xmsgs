@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="NgdBuild" num="889" delta="old" >Pad net &apos;<arg fmt="%s" index="1">mig_gen.ddrc/MCB_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/mcbx_dram_dqs_n</arg>&apos; is not connected to an external port in this design.  A new port &apos;<arg fmt="%s" index="2">mig_gen.ddrc/MCB_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/mcbx_dram_dqs_n</arg>&apos; has been added and is connected to this signal.
+</msg>
+
+<msg type="info" file="NgdBuild" num="889" delta="old" >Pad net &apos;<arg fmt="%s" index="1">mig_gen.ddrc/MCB_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/mcbx_dram_udqs_n</arg>&apos; is not connected to an external port in this design.  A new port &apos;<arg fmt="%s" index="2">mig_gen.ddrc/MCB_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/mcbx_dram_udqs_n</arg>&apos; has been added and is connected to this signal.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET sw(0)	LOC = A10;&gt; [leon3mp.ucf(34)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sw(0)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET sw(0)	LOC = A10;&gt; [leon3mp.ucf(34)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET sw(1)	LOC = D14;&gt; [leon3mp.ucf(35)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sw(1)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET sw(1)	LOC = D14;&gt; [leon3mp.ucf(35)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET sw(2)	LOC = C14;&gt; [leon3mp.ucf(36)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sw(2)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET sw(2)	LOC = C14;&gt; [leon3mp.ucf(36)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET sw(3)	LOC = P15;&gt; [leon3mp.ucf(37)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">sw(3)</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET sw(3)	LOC = P15;&gt; [leon3mp.ucf(37)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk27</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk27</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">clkgen0/xc3s.v/dll0</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkgen0_xc3s_v_clk0B = PERIOD &quot;clkgen0_xc3s_v_clk0B&quot; TS_clk27 / 0.5 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkgen0_xc3s_v_clk0B</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkgen0_xc3s_v_clk0B</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_CLKGEN</arg> instance <arg fmt="%s" index="5">inst_dcm0</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_CLKGEN</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clk200_0 = PERIOD &quot;clk200_0&quot; TS_clkgen0_xc3s_v_clk0B / 4 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk200_0</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk200_0</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">mig_gen.ddrc/MCB_inst/memc3_infrastructure_inst/u_pll_adv</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT3</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_mig_gen_ddrc_MCB_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in_0 = PERIOD &quot;mig_gen_ddrc_MCB_inst_memc3_infrastructure_inst_mcb_drp_clk_bufg_in_0&quot; TS_clk200_0 / 0.25 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk200_0</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk200_0</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">mig_gen.ddrc/MCB_inst/memc3_infrastructure_inst/u_pll_adv</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_mig_gen_ddrc_MCB_inst_memc3_infrastructure_inst_clk_2x_180_0 = PERIOD &quot;mig_gen_ddrc_MCB_inst_memc3_infrastructure_inst_clk_2x_180_0&quot; TS_clk200_0 / 2 PHASE 1.25 ns HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk200_0</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk200_0</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">mig_gen.ddrc/MCB_inst/memc3_infrastructure_inst/u_pll_adv</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_mig_gen_ddrc_MCB_inst_memc3_infrastructure_inst_clk_2x_0_0 = PERIOD &quot;mig_gen_ddrc_MCB_inst_memc3_infrastructure_inst_clk_2x_0_0&quot; TS_clk200_0 / 2 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk200_0</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk200_0</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">mig_gen.ddrc/MCB_inst/memc3_infrastructure_inst/u_pll_adv</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT2</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_mig_gen_ddrc_MCB_inst_memc3_infrastructure_inst_clk0_bufg_in_0 = PERIOD &quot;mig_gen_ddrc_MCB_inst_memc3_infrastructure_inst_clk0_bufg_in_0&quot; TS_clk200_0 / 0.125 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="NgdBuild" num="1222" delta="old" >Setting <arg fmt="%s" index="1">CLKIN_PERIOD</arg> attribute associated with <arg fmt="%s" index="2">DCM</arg> instance <arg fmt="%s" index="3">clkgen0/xc3s.v/dll0</arg> to <arg fmt="%s" index="4">10.000000</arg> ns based on the period specification (<arg fmt="%s" index="5">&lt;TIMESPEC TS_clk27 = PERIOD &quot;clk27&quot; 10 ns HIGH 50%;&gt; [leon3mp.ucf(158)]</arg>).
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N2277</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N2278</arg>&apos; has no driver
+</msg>
+
+</messages>
+

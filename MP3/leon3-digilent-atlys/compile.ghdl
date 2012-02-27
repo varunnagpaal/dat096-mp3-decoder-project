@@ -1,0 +1,7 @@
+	mkdir gnu
+	mkdir gnu/grlib
+	ghdl -a -fexplicit --ieee=synopsys  --workdir=gnu/grlib --work=grlib -Pgnu -Pgnu/grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/version.vhd
+	ghdl -a -fexplicit --ieee=synopsys  --workdir=gnu/grlib --work=grlib -Pgnu -Pgnu/grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/config.vhd
+	ghdl -a -fexplicit --ieee=synopsys  --workdir=gnu/grlib --work=grlib -Pgnu -Pgnu/grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdlib.vhd
+	ghdl -a -fexplicit --ieee=synopsys  --workdir=gnu/grlib --work=grlib -Pgnu -Pgnu/grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdio.vhd
+	ghdl -a -fexplicit --ieee=synopsys  --workdir=gnu/grlib --work=grlib -Pgnu -Pgnu/grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/testlib.vhd

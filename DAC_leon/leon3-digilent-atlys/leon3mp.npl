@@ -1,0 +1,275 @@
+JDF G
+PROJECT leon3mp
+DESIGN leon3mp
+DEVFAM Spartan6
+DEVICE XC6SLX45
+DEVSPEED -3
+DEVPKG csg324
+DEVTOPLEVELMODULETYPE HDL
+DEVSIMULATOR Modelsim
+DEVGENERATEDSIMULATIONMODEL VHDL
+SOURCE mig37/mig_37/user_design/rtl/iodrp_controller.vhd
+SOURCE mig37/mig_37/user_design/rtl/iodrp_mcb_controller.vhd
+SOURCE mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd
+SOURCE mig37/mig_37/user_design/rtl/mcb_soft_calibration.vhd
+SOURCE mig37/mig_37/user_design/rtl/mcb_soft_calibration_top.vhd
+SOURCE mig37/mig_37/user_design/rtl/memc3_infrastructure.vhd
+SOURCE mig37/mig_37/user_design/rtl/memc3_wrapper.vhd
+SOURCE mig37/mig_37/user_design/rtl/mig_37.vhd
+SOURCE config.vhd
+SOURCE ahbrom.vhd
+SOURCE ahb2mig_sp601.vhd
+SOURCE led_pkg.vhd
+SOURCE ledmod.vhd
+SOURCE adder_pkg.vhd
+SOURCE SKadder.vhd
+SOURCE leon3mp.vhd
+SUBLIB grlib VhdlLibrary vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/version.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/config.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdlib.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/sparc/sparc.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/modgen/multlib.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/modgen/leaves.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/amba/amba.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/amba/devices.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/amba/defmst.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/amba/apbctrl.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/amba/ahbctrl.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/amba/dma2ahb_pkg.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/amba/dma2ahb.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/amba/ahbmst.vhd grlib vhdl
+SUBLIB secureip VhdlLibrary vhdl
+SUBLIB unisim VhdlLibrary vhdl
+SUBLIB synplify VhdlLibrary vhdl
+SUBLIB techmap VhdlLibrary vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/gencomp/gencomp.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/gencomp/netcomp.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/inferred/memory_inferred.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/inferred/ddr_inferred.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/inferred/mul_inferred.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/inferred/ddr_phy_inferred.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/inferred/ddrphy_datapath.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/memory_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/buffer_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/pads_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/clkgen_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/tap_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/ddr_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/ddr_phy_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/grspwc_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/grspwc2_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/grusbhc_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/ssrctrl_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/sysmon_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/mul_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/spictrl_unisim.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/spictrl_unisim_comb0.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/unisim/spictrl_unisim_comb1.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/allclkgen.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/allddr.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/allmem.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/allmul.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/allpads.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/alltap.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/clkgen.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/clkmux.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/clkand.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/ddr_ireg.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/ddr_oreg.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/ddrphy.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncram.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncram64.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncram_2p.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncram_dp.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncfifo.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/regfile_3p.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/tap.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/techbuf.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/nandtree.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/clkpad.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/clkpad_ds.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/inpad.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/inpad_ds.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/iodpad.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/iopad.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/iopad_ds.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/lvds_combo.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/odpad.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/outpad.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/outpad_ds.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/toutpad.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/skew_outpad.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/grspwc_net.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/grspwc2_net.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/grlfpw_net.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/grfpw_net.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/leon4_net.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/mul_61x61.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/cpu_disas_net.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/grusbhc_net.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/ringosc.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/ssrctrl_net.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/grpci2_phy_net.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/system_monitor.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/grgates.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/inpad_ddr.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/outpad_ddr.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/iopad_ddr.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncram128bw.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncram256bw.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncram128.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncram156bw.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/techmult.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/spictrl_net.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/scanreg.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncrambw.vhd techmap vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/techmap/maps/syncram_2pbw.vhd techmap vhdl
+SUBLIB eth VhdlLibrary vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/eth/comp/ethcomp.vhd eth vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/eth/core/greth_pkg.vhd eth vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/eth/core/eth_rstgen.vhd eth vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/eth/core/eth_edcl_ahb_mst.vhd eth vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/eth/core/eth_ahb_mst.vhd eth vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/eth/core/greth_tx.vhd eth vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/eth/core/greth_rx.vhd eth vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/eth/core/grethc.vhd eth vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/eth/wrapper/greth_gen.vhd eth vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/eth/wrapper/greth_gbit_gen.vhd eth vhdl
+SUBLIB opencores VhdlLibrary vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/opencores/occomp/occomp.vhd opencores vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/opencores/i2c/i2c_master_bit_ctrl.vhd opencores vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/opencores/i2c/i2c_master_byte_ctrl.vhd opencores vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/opencores/i2c/i2coc.vhd opencores vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/opencores/spi/simple_spi_top.v opencores verilog
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/opencores/ac97/ac97_top.v opencores verilog
+SUBLIB gaisler VhdlLibrary vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/arith/arith.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/arith/mul32.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/arith/div32.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/memctrl/memctrl.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/memctrl/sdctrl.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/memctrl/sdctrl64.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/memctrl/sdmctrl.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/memctrl/srctrl.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/leon3.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmuconfig.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmuiface.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/libmmu.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/libiu.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/libcache.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/libproc3.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/cachemem.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmu_icache.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmu_dcache.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmu_acache.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmutlbcam.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmulrue.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmulru.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmutlb.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmutw.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmu.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mmu_cache.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/cpu_disasx.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/iu3.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/grfpwx.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/mfpwx.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/grlfpwx.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/tbufmem.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/dsu3x.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/dsu3.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/proc3.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/leon3s.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/leon3cg.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/irqmp.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/grfpwxsh.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/grfpushwx.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/leon3/leon3sh.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/misc.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/rstgen.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/gptimer.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/ahbram.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/ahbdpram.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/ahbtrace.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/ahbtrace_mb.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/ahbtrace_mmb.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/grgpio.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/ahbstat.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/logan.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/apbps2.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/charrom_package.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/charrom.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/apbvga.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/svgactrl.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/wild.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/wild2ahb.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/grsysmon.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/gracectrl.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/grgpreg.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/ahbmst2.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/ahb_mst_iface.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/misc/grgprbank.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/net/net.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/uart/uart.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/uart/libdcom.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/uart/apbuart.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/uart/dcom.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/uart/dcom_uart.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/uart/ahbuart.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/jtag/jtag.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/jtag/libjtagcom.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/jtag/jtagcom.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/jtag/ahbjtag.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/jtag/ahbjtag_bsd.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/jtag/bscanregs.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/jtag/bscanregsbd.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/greth/ethernet_mac.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/greth/greth.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/greth/greth_mb.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/greth/greth_gbit.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/greth/greth_gbit_mb.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/greth/grethm.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/ddr/ddrphy_wrap.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/ddr/ddrsp16a.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/ddr/ddrsp32a.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/ddr/ddrsp64a.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/ddr/ddrspa.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/ddr/ddr2spa.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/ddr/ddr2buf.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/ddr/ddr2spax.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/ddr/ddr2spax_ahb.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/ddr/ddr2spax_ddr.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/i2c/i2c.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/i2c/i2cmst.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/i2c/i2cmst_gen.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/i2c/i2cslv.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/i2c/i2c2ahbx.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/i2c/i2c2ahb.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/i2c/i2c2ahb_apb.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/spi/spi.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/spi/spimctrl.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/spi/spictrlx.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/spi/spictrl.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/spi/spi2ahbx.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/spi/spi2ahb.vhd gaisler vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/gaisler/spi/spi2ahb_apb.vhd gaisler vhdl
+SUBLIB esa VhdlLibrary vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/esa/memoryctrl/memoryctrl.vhd esa vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/esa/memoryctrl/mctrl.vhd esa vhdl
+SUBLIB fmf VhdlLibrary vhdl
+SUBLIB spansion VhdlLibrary vhdl
+SUBLIB gsi VhdlLibrary vhdl
+SUBLIB work VhdlLibrary vhdl
+DEPASSOC leon3mp leon3mp.ucf
+[Normal]
+_SynthFsmEncode=xstvhd,  Spartan6, VHDL.t_synthesize, 1102507235, None
+p_xstBusDelimiter=xstvhd,  Spartan6, VHDL.t_synthesize, 1102507235, ()
+xilxMapAllowLogicOpt=xstvhd,  Spartan6, VHDL.t_placeAndRouteDes, 1102861051, True
+xilxMapCoverMode=xstvhd,  Spartan6, VHDL.t_placeAndRouteDes, 1102861051, Speed
+xilxMapTimingDrivenPacking=xstvhd,  Spartan6, VHDL.t_placeAndRouteDes, 1102861051, True
+xilxNgdbld_AUL=xstvhd,  Spartan6, VHDL.t_placeAndRouteDes, 1102861051, True
+xilxNgdbldMacro=xstvhd,  Spartan6, VHDL.t_ngdbuild, 1105377047, /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/netlists/xilinx/Spartan3
+xilxPAReffortLevel=xstvhd,  Spartan6, VHDL.t_placeAndRouteDes, 1102861051, Medium
+[STRATEGY-LIST]
+Normal=True
+DEVSYNTHESISTOOL XST (VHDL/Verilog)

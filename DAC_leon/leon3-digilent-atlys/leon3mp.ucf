@@ -1,0 +1,158 @@
+##########################################################################
+# Target Board: Xilinx Spartan6 Atlys Board LX45                      ##
+##########################################################################
+# ==== Clock inputs (USER CLK 100 MHz) ====
+NET "clk27" LOC = "L15";
+#NET "reset" CLOCK_DEDICATED_ROUTE = FALSE;
+
+# XST versions of DDR2 false paths
+NET "mig_gen.ddrc/MCB_inst/memc?_wrapper_inst/memc?_mcb_raw_wrapper_inst/selfrefresh_mcb_mode" TIG;
+NET "mig_gen.ddrc/MCB_inst/c?_pll_lock" TIG;
+NET "mig_gen.ddrc/MCB_inst/memc?_wrapper_inst/memc?_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/CKE_Train" TIG; ## This path exists for DDR2 only
+##NET "mig_gen.ddrc/MCB_inst/memc?_wrapper_inst/memc?_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL" TIG;
+##NET "mig_gen.ddrc/i.calib_done" TIG;
+#PIN "clkgen0/xc3s.v/bufg0.O" CLOCK_DEDICATED_ROUTE = FALSE;
+# Avoid false paths between main clock and DDR clock
+NET "clkm"  TNM_NET = "clkm";
+
+# ==== Pushbuttons ====
+NET reset	LOC = F6;
+NET dsubre	LOC = N4;    # GPIO_BUTTON0
+# ==== Discrete LEDs ====
+NET led(0)	LOC = U18;
+NET led(1)	LOC = M14;
+NET led(2)	LOC = N14;
+NET errorn	LOC = L14 |IOSTANDARD = LVCMOS25;
+NET led(3) LOC=M13 |IOSTANDARD = LVCMOS25;
+NET led(4)	LOC = D4 |IOSTANDARD = LVTTL;
+NET led(5)	LOC = P16;
+#NET led(6)	LOC = N12 |IOSTANDARD = LVTTL;
+NET flag	LOC = N12 |IOSTANDARD = LVTTL;
+#-----------
+#NET caca LOC=T3;
+# ==== DIP Switches ====
+NET sw(0)	LOC = A10;
+NET sw(1)	LOC = D14;
+NET sw(2)	LOC = C14;
+NET sw(3)	LOC = P15;
+
+# ==== Audio card
+NET dac_cs_fin     LOC = T3   | IOSTANDARD = LVTTL;
+NET dac_clk_fin     LOC = R3   | IOSTANDARD = LVTTL;
+NET dac_in_fin     LOC = P6   | IOSTANDARD = LVTTL;
+NET dac_ldac_fin     LOC = N5   | IOSTANDARD = LVTTL;
+
+# ==== DDR2 SDRAM (16-bit data buss) ====   DIFF_SSTL18_II
+NET "ddr_dq(*)"            IN_TERM = NONE;       
+NET "ddr_dqs(*)"           IN_TERM = NONE;       
+NET  "ddr_dq(*)"           IOSTANDARD = SSTL18_II;
+NET  "ddr_ad(*)"           IOSTANDARD = SSTL18_II;
+NET  "ddr_ba(*)"           IOSTANDARD = SSTL18_II;
+NET  "ddr_dqs(*)"          IOSTANDARD = DIFF_SSTL18_II;  
+NET  "ddr_clk"             IOSTANDARD = DIFF_SSTL18_II;
+NET  "ddr_clkb"            IOSTANDARD = DIFF_SSTL18_II;
+NET  "ddr_cke"             IOSTANDARD = SSTL18_II;
+NET  "ddr_ras"             IOSTANDARD = SSTL18_II;
+NET  "ddr_cas"             IOSTANDARD = SSTL18_II;
+NET  "ddr_we"              IOSTANDARD = SSTL18_II;
+NET  "ddr_odt"             IOSTANDARD = SSTL18_II;
+NET  "ddr_dm(*)"           IOSTANDARD = SSTL18_II;
+NET  "ddr_rzq"             IOSTANDARD = SSTL18_II;
+NET  "ddr_zio"             IOSTANDARD = SSTL18_II;
+NET  "ddr_ad(0)"            LOC = "J7" ;
+NET  "ddr_ad(10)"           LOC = "F4" ;
+NET  "ddr_ad(11)"           LOC = "D3" ;
+NET  "ddr_ad(12)"           LOC = "G6" ;
+NET  "ddr_ad(1)"            LOC = "J6" ;
+NET  "ddr_ad(2)"            LOC = "H5" ;
+NET  "ddr_ad(3)"            LOC = "L7" ;
+NET  "ddr_ad(4)"            LOC = "F3" ;
+NET  "ddr_ad(5)"            LOC = "H4" ;
+NET  "ddr_ad(6)"            LOC = "H3" ;
+NET  "ddr_ad(7)"            LOC = "H6" ;
+NET  "ddr_ad(8)"            LOC = "D2" ;
+NET  "ddr_ad(9)"            LOC = "D1" ;
+#
+NET  "ddr_ba(0)"           LOC = "F2" ;
+NET  "ddr_ba(1)"           LOC = "F1" ;
+NET  "ddr_ba(2)"           LOC = "E1" ;
+#Data
+NET  "ddr_dq(0)"           LOC = "L2" ;
+NET  "ddr_dq(10)"          LOC = "N2" ;
+NET  "ddr_dq(11)"          LOC = "N1" ;
+NET  "ddr_dq(12)"          LOC = "T2" ;
+NET  "ddr_dq(13)"          LOC = "T1" ;
+NET  "ddr_dq(14)"          LOC = "U2" ;
+NET  "ddr_dq(15)"          LOC = "U1" ;
+NET  "ddr_dq(1)"           LOC = "L1" ;
+NET  "ddr_dq(2)"           LOC = "K2" ;
+NET  "ddr_dq(3)"           LOC = "K1" ;
+NET  "ddr_dq(4)"           LOC = "H2" ;
+NET  "ddr_dq(5)"           LOC = "H1" ;
+NET  "ddr_dq(6)"           LOC = "J3" ;
+NET  "ddr_dq(7)"           LOC = "J1" ;
+NET  "ddr_dq(8)"           LOC = "M3" ;
+NET  "ddr_dq(9)"           LOC = "M1" ;
+NET  "ddr_cas"             LOC = "K5" ;
+NET  "ddr_clk"             LOC = "G3" ;
+NET  "ddr_clkb"            LOC = "G1" ;
+NET  "ddr_cke"             LOC = "H7" ;
+NET  "ddr_dm(0)"           LOC = "K3" ;
+#
+NET  "ddr_dqs(0)"          LOC = "L4" ;
+#NET  "ddr_dqsn(0)"        LOC = "L3" ;
+NET  "ddr_odt"             LOC = "K6" ;
+NET  "ddr_ras"             LOC = "L5" ;
+NET  "ddr_dm(1)"           LOC = "K4" ;
+NET  "ddr_dqs(1)"          LOC = "P2" ;
+NET  "ddr_we"              LOC = "E3" ;
+
+# The specific pin below for RZQ is required for xc6slx16-csg324 
+# revision 1.1 silicon to be compatible with calibrated input termination
+# The ZIO pin can be assigned to any unused no connect (NC) pin within the MCB bank
+NET  "ddr_rzq"                                  LOC = "C2" ;
+NET  "ddr_zio"                                  LOC = "L6" ;
+
+#
+## ==== Ethernet PHY ====
+NET reset_o2    LOC = G13 | IOSTANDARD = LVCMOS25;
+NET erx_clk	LOC = K15 | IOSTANDARD = LVCMOS25;
+NET etx_clk	LOC = K16  | IOSTANDARD = LVCMOS25;
+NET erx_crs	LOC = C18 | IOSTANDARD = LVCMOS25;
+NET erx_dv	LOC = F17 | IOSTANDARD = LVCMOS25;
+NET erx_col	LOC = C17 | IOSTANDARD = LVCMOS25;
+NET erx_er	LOC = F18 | IOSTANDARD = LVCMOS25;
+NET erxd(0)	LOC = G16 | IOSTANDARD = LVCMOS25;
+NET erxd(1)	LOC = H14 | IOSTANDARD = LVCMOS25;
+NET erxd(2)	LOC = E16 | IOSTANDARD = LVCMOS25;
+NET erxd(3)	LOC = F15 | IOSTANDARD = LVCMOS25;
+NET erxd(4)	LOC = F14 | IOSTANDARD = LVCMOS25;
+NET erxd(5)	LOC = E18 | IOSTANDARD = LVCMOS25;
+NET erxd(6)	LOC = D18 | IOSTANDARD = LVCMOS25;
+NET erxd(7)	LOC = D17 | IOSTANDARD = LVCMOS25;
+NET etx_en	LOC = H15  | IOSTANDARD = LVCMOS25;
+NET etx_er	LOC = G18  | IOSTANDARD = LVCMOS25;
+NET emdc	LOC = F16 | IOSTANDARD = LVCMOS25;
+NET emdio	LOC = N17 | IOSTANDARD = LVCMOS25;
+NET etxd(0)	LOC = H16  | IOSTANDARD = LVCMOS25;
+NET etxd(1)	LOC = H13  | IOSTANDARD = LVCMOS25;
+NET etxd(2)	LOC = K14  | IOSTANDARD = LVCMOS25;
+NET etxd(3)	LOC = K13  | IOSTANDARD = LVCMOS25;
+NET etxd(4)	LOC = J13  | IOSTANDARD = LVCMOS25;
+NET etxd(5)	LOC = G14  | IOSTANDARD = LVCMOS25;
+NET etxd(6)	LOC = H12  | IOSTANDARD = LVCMOS25;
+NET etxd(7)	LOC = K12  | IOSTANDARD = LVCMOS25;
+
+##
+##NET GTX_CLK	LOC = L12  | IOSTANDARD = LVCMOS18;
+##NET INT        LOC = L16 | IOSTANDARD = LVCMOS18;
+##NET MCLK	LOC = ??  | IOSTANDARD = LVCMOS18;
+#
+
+  
+## ==== Debug UART (AHB)/ USB UART Connector ====
+NET dsurx	LOC = A16; 
+NET dsutx	LOC = B16;
+#Created by Constraints Editor (xc6slx45-csg324-3) - 2011/07/05
+NET "clk27" TNM_NET = clk27;
+TIMESPEC TS_clk27 = PERIOD "clk27" 10 ns HIGH 50%;
