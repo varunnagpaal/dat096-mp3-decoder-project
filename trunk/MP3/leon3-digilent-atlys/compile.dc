@@ -1,0 +1,6 @@
+sh mkdir synopsys
+sh mkdir synopsys/grlib 
+define_design_lib grlib -path synopsys/grlib 
+analyze -f VHDL -library grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/version.vhd
+analyze -f VHDL -library grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/config.vhd
+analyze -f VHDL -library grlib /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdlib.vhd

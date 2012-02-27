@@ -1,0 +1,3 @@
+
+/chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/opencores/spi/simple_spi_top.v
+/chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/opencores/ac97/ac97_top.v

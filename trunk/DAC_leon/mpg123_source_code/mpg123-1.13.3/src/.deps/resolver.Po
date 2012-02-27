@@ -1,0 +1,404 @@
+resolver.o: resolver.c mpg123app.h config.h ../src/libmpg123/compat.h \
+ config.h ../src/libmpg123/intsym.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/stdlib.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/ieeefp.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/_ansi.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/newlib.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/config.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/include/stddef.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/reent.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/_ansi.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/_types.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/_types.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/_default_types.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/lock.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/stdlib.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/alloca.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/stdio.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/include/stdarg.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/types.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/types.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/features.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/sched.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/stdio.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/math.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/fastmath.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/signal.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/signal.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/unistd.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/unistd.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/inttypes.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/stdint.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/include-fixed/limits.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/include-fixed/syslimits.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/limits.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/syslimits.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/string.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/string.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/time.h \
+ xfermem.h httpget.h ../src/libmpg123/mpg123.h win32_support.h audio.h \
+ module.h local.h ../src/libmpg123/true.h resolver.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/netdb.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/bsd/sys/cdefs.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/bsdnet/_types.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/param.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/endian.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/param.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/limits.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/sys/socket.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/netinet/in.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/endian.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/system.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/cpuopts.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/cpu.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/sparc.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/types.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/include/stdbool.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/status.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/status.inl \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/types.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/heap.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/object.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/chain.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/address.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/address.inl \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/bspIo.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/isr.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/isr.inl \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/object.inl \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/priority.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/tod.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/timestamp.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/timespec.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/time.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/time.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/watchdog.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/modes.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/config.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/posix/config.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/config.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/tasks.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/states.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/thread.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/context.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/stack.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/tqdata.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/threadsync.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/eventset.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/asr.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/attr.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/extension.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/userext.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/interr.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/io.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/init.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/intr.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/options.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/barrier.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/support.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/corebarrier.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/threadq.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/cache.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/clock.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/timer.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/sem.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/coremutex.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/sysstate.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/sysstate.inl \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/coresem.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/message.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/coremsg.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/event.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/signal.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/object.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/part.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/region.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/debug.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/dpmem.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/fatal.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/ratemon.h \
+ /chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/arpa/inet.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/errno.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/errno.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/fcntl.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/fcntl.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/_default_fcntl.h \
+ /nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/stat.h \
+ ../src/libmpg123/debug.h
+
+mpg123app.h:
+
+config.h:
+
+../src/libmpg123/compat.h:
+
+config.h:
+
+../src/libmpg123/intsym.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/stdlib.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/ieeefp.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/_ansi.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/newlib.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/config.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/include/stddef.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/reent.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/_ansi.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/_types.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/_types.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/_default_types.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/lock.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/stdlib.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/alloca.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/stdio.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/include/stdarg.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/types.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/types.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/features.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/sched.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/stdio.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/math.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/fastmath.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/signal.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/signal.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/unistd.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/unistd.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/inttypes.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/stdint.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/include-fixed/limits.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/include-fixed/syslimits.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/limits.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/syslimits.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/string.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/string.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/time.h:
+
+xfermem.h:
+
+httpget.h:
+
+../src/libmpg123/mpg123.h:
+
+win32_support.h:
+
+audio.h:
+
+module.h:
+
+local.h:
+
+../src/libmpg123/true.h:
+
+resolver.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/netdb.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/bsd/sys/cdefs.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/bsdnet/_types.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/param.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/endian.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/param.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/limits.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/sys/socket.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/netinet/in.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/endian.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/system.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/cpuopts.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/cpu.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/sparc.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/types.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/include/stdbool.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/status.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/status.inl:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/types.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/heap.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/object.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/chain.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/address.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/address.inl:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/bspIo.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/isr.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/isr.inl:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/object.inl:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/priority.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/tod.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/timestamp.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/timespec.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/time.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/machine/time.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/watchdog.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/modes.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/config.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/posix/config.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/config.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/tasks.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/states.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/thread.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/context.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/stack.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/tqdata.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/threadsync.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/eventset.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/asr.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/attr.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/extension.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/userext.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/interr.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/io.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/init.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/intr.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/options.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/barrier.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/support.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/corebarrier.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/threadq.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/cache.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/clock.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/timer.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/sem.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/coremutex.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/sysstate.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/sysstate.inl:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/coresem.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/message.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/score/coremsg.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/event.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/signal.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/object.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/part.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/region.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/debug.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/dpmem.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/fatal.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/rtems/rtems/ratemon.h:
+
+/chalmers/sw/unsup64/rtems-4.10/sparc-rtems/leon3/lib/include/arpa/inet.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/errno.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/errno.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/fcntl.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/fcntl.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/_default_fcntl.h:
+
+/nfs4/merkurius.ita.chalmers.se/sw/unsup64/rtems-4.10/bin/../lib/gcc/sparc-rtems/4.4.6/../../../../sparc-rtems/include/sys/stat.h:
+
+../src/libmpg123/debug.h:

@@ -1,0 +1,375 @@
+Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
+License RTL_Compiler_Physical checkout failed
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+License RTL_Compiler_Ultra checkout failed
+Checking out license 'RTL_Compiler_Verification'... (0 seconds elapsed)
+License RTL_Compiler_Verification checkout failed
+Checking out license 'FE_GPS'... (0 seconds elapsed)
+License FE_GPS checkout failed
+Checking out license 'SOC_Encounter_GPS'... (0 seconds elapsed)
+License SOC_Encounter_GPS checkout failed
+Checking out license 'First_Encounter_GXL'... (0 seconds elapsed)
+License First_Encounter_GXL checkout failed
+Checking out license 'SOC_Encounter_GXL'... (0 seconds elapsed)
+License SOC_Encounter_GXL checkout failed
+Checking out license 'Encounter_Design_Planner_XL'... (0 seconds elapsed)
+License Encounter_Design_Planner_XL checkout failed
+Checking out license 'Encounter_Digital_Impl_Sys_XL'... (0 seconds elapsed)
+Reading GUI preferences file '/chalmers/users/chrnils/.cadence/rc.gui'.
+
+                       Cadence Encounter(R) RTL Compiler
+               Version v09.10-p104_1 (32-bit), built Jun 18 2009
+
+
+Copyright notice: Copyright 1997-2009 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+Patent notices: Protected by U.S. Patents: 5892687; 6470486; 6772398; 6772399; 
+6807651; 6832357; 7007247 
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+       object  attribute
+       ------  ---------
+       design  checkpoint_dofile_naming_style
+       design  checkpoint_netlist_naming_style
+       design  dp_perform_rewriting_operations
+       design  multipass_mux_optimization
+       design  timing_driven_muxopto
+     instance  black_box
+     instance  dft_inherited_dont_scan
+     instance  write_positional_connections
+      libcell  black_box
+          net  logic0_driven
+          net  logic1_driven
+         root  bit_blast_constants
+         root  bit_blast_mapped_ports
+         root  checkpoint_flow
+         root  checkpoint_gzipped_netlist
+         root  degenerate_complex_seqs
+         root  delayed_pragma_commands_interpreter
+         root  dp_perform_rewriting_operations
+         root  dp_perform_sharing_operations
+         root  exact_match_seqs_async_controls
+         root  gen_no_negative_index
+         root  gen_unconnected_port_style
+         root  gen_write_empty_module_for_logic_abstract
+         root  hdl_array_generator
+         root  hdl_flatten_array
+         root  hdl_old_reg_naming
+         root  hdl_record_generator
+         root  hdl_reg_naming_style_scalar
+         root  hdl_reg_naming_style_vector
+         root  hdl_trim_target_index
+         root  hdl_vector_naming_style
+         root  lbr_async_clr_pre_seqs_interchangable
+         root  pqos_virtual_buffer
+         root  retime_preserve_state_points
+         root  wlec_env_var
+         root  wlec_flat_r2n
+         root  wlec_new_hier_comp
+         root  wlec_no_exit
+         root  wlec_save_ssion
+         root  wlec_sim_lib
+         root  wlec_sim_plus_lib
+         root  wlec_verbose
+    subdesign  allow_sharing_subdesign
+    subdesign  dp_perform_rewriting_operations
+    subdesign  multipass_mux_optimization
+    subdesign  timing_driven_muxopto
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+rc:/> include read_vhdl.sh 
+Sourcing './read_vhdl.sh' (Sat Feb 11 13:58:42 CET 2012)...
+Error   : A required argument was not specified. [TUI-202] [read_hdl]
+        : An argument of type '<string>+' was not specified.
+        : Rerun the command specifying all required arguments.
+  read_hdl: reads in Verilog or VHDL files 
+
+Usage: read_hdl  [-vhdl] [-v1995] [-v2001] [-sv] [-library <string>] [-netlist]
+           [-top <string>] [-define <string>]+ <string>+
+
+    [-vhdl]:
+        specifies that HDL files are VHDL files 
+    [-v1995]:
+        specifies that HDL files conform to Verilog-1995 (default) 
+    [-v2001]:
+        specifies that HDL files conform to Verilog-2001 
+    [-sv]:
+        specifies that HDL files conform to SystemVerilog P1800 
+    [-library <string>]:
+        specifies the name of a VHDL or Verilog library 
+    [-netlist]:
+        specifies that HDL files conform to structural Verilog-1995 and is 
+        intended to be used in mixed input elaboration mode 
+    [-top <string>]:
+        specifies the top-level structural Verilog module to be read and 
+        elaborated (use with read_netlist) 
+    [-define <string>]:
+        defines Verilog macro 
+    <string>+:
+        the name of the HDL files to read 
+Failed on read_hdl -vhdl
+rc:/> include read_vhdl.sh 
+Sourcing './read_vhdl.sh' (Sat Feb 11 13:59:10 CET 2012)...
+use unisim.vcomponents.all;
+           |
+Error   : No such primary unit in library. [VHDLPT-703] [read_hdl]
+        : No unit 'vcomponents' in unisim in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 130, column 12.
+        : There are two typical causes for this error: 1) the unit has not been read in with read_hdl -vhdl; or 2) it has been read into a different library than the library referenced in this context.
+ architecture aarch of mcb_raw_wrapper is
+ |
+Error   : No such primary unit in library. [VHDLPT-703] [read_hdl]
+        : No unit 'mcb_raw_wrapper' in WORK in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 458, column 2.
+      C_MEM_TZQINIT_MAXCNT  : std_logic_vector(9 downto 0) := "1000000000"; -- DDR3 Minimum delay between resets 
+                              |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic_vector' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 462, column 31.
+        : Invalid or unsupported VHDL syntax is encountered.
+      C_MEM_TZQINIT_MAXCNT  : std_logic_vector(9 downto 0) := "1000000000"; -- DDR3 Minimum delay between resets 
+                                               |
+Error   : A non-array type mark may not have an index constraint. [VHDLPT-653] [read_hdl]
+        : in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 462, column 48.
+        : Invalid or unsupported VHDL syntax is encountered.
+      C_MEM_TZQINIT_MAXCNT  : std_logic_vector(9 downto 0) := "1000000000"; -- DDR3 Minimum delay between resets 
+                                                         |
+Error   : Range must be of a discrete type. [VHDLPT-709] [read_hdl]
+        : Index constraint has type <unknown name> in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 462, column 58.
+        : Invalid or unsupported VHDL syntax is encountered.
+      UI_CLK                : in std_logic;             -- Input - global clock to be used for input_term_tuner and IODRP clock
+                                 |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 475, column 34.
+      RST                   : in std_logic;             -- Input - reset for input_term_tuner - synchronous for input_term_tuner state machine, asynch for 
+                                 |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 476, column 34.
+      IOCLK                 : in std_logic;             -- Input - IOCLK input to the IODRP's
+                                 |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 478, column 34.
+      DONE_SOFTANDHARD_CAL  : out std_logic;            -- active high flag signals soft calibration of input delays is complete and MCB_UODONECAL is high
+                                  |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 479, column 35.
+      PLL_LOCK              : in std_logic;             -- Lock signal from PLL
+                                 |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 481, column 34.
+      SELFREFRESH_REQ       : in std_logic;             
+                                 |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 482, column 34.
+      SELFREFRESH_MCB_MODE  : in std_logic;             
+                                 |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 483, column 34.
+      SELFREFRESH_MCB_REQ   : out std_logic;            
+                                  |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 484, column 35.
+      SELFREFRESH_MODE      : out std_logic;            
+                                  |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 485, column 35.
+      MCB_UIADD             : out std_logic;            -- to MCB's UIADD port
+                                  |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 486, column 35.
+      MCB_UISDI             : out std_logic;            -- to MCB's UISDI port
+                                  |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 487, column 35.
+      MCB_UOSDO             : in std_logic;
+                                 |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 488, column 34.
+      MCB_UODONECAL         : in std_logic;
+                                 |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 489, column 34.
+      MCB_UOREFRSHFLAG      : in std_logic;
+                                 |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 490, column 34.
+      MCB_UICS              : out std_logic;
+                                  |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 491, column 35.
+      MCB_UIDRPUPDATE       : out std_logic;
+                                  |
+Error   : Undeclared identifier. [VHDLPT-766] [read_hdl]
+        : Identifier 'std_logic' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 492, column 35.
+      MCB_UIBROADCAST       : out std_logic;
+      |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : port clause requires ')', read <identifier> MCB_UIBROADCAST in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 493, column 7.
+        : Invalid or unsupported VHDL syntax is encountered.
+      MCB_UIBROADCAST       : out std_logic;
+      |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : port clause requires ';', read <identifier> MCB_UIBROADCAST in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 493, column 7.
+      MCB_UIBROADCAST       : out std_logic;
+      |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : component declaration requires END, read <identifier> MCB_UIBROADCAST in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 493, column 7.
+      MCB_UIBROADCAST       : out std_logic;
+                            |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : architecture body requires BEGIN, read ':' in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 493, column 29.
+      MCB_UIBROADCAST       : out std_logic;
+                            |
+Error   : Unexpected construct. [VHDLPT-630] [read_hdl]
+        : Expecting a concurrent statement in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 493, column 29.
+        : Invalid or unsupported VHDL syntax is encountered.
+      MCB_UIBROADCAST       : out std_logic;
+                              |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : architecture body requires END, read keyword OUT in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 493, column 31.
+      MCB_UIBROADCAST       : out std_logic;
+                                  |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : architecture body requires ';', read <identifier> std_logic in file 'mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd' on line 493, column 35.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'mig37/mig_37/user_design/rtl/mcb_soft_calibration.vhd' on line 102, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'mig37/mig_37/user_design/rtl/mcb_soft_calibration.vhd' on line 102, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'mig37/mig_37/user_design/rtl/mcb_soft_calibration_top.vhd' on line 78, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'mig37/mig_37/user_design/rtl/mcb_soft_calibration_top.vhd' on line 78, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'mig37/mig_37/user_design/rtl/memc3_infrastructure.vhd' on line 65, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'mig37/mig_37/user_design/rtl/memc3_infrastructure.vhd' on line 65, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'mig37/mig_37/user_design/rtl/memc3_wrapper.vhd' on line 65, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'mig37/mig_37/user_design/rtl/memc3_wrapper.vhd' on line 65, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'mig37/mig_37/user_design/rtl/mig_37.vhd' on line 66, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'mig37/mig_37/user_design/rtl/mig_37.vhd' on line 66, column 9.
+library techmap;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> techmap in file 'config.vhd' on line 10, column 9.
+library techmap;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> techmap in file 'config.vhd' on line 10, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'ahbrom.vhd' on line 19, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'ahbrom.vhd' on line 19, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'ahb2mig_sp601.vhd' on line 28, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'ahb2mig_sp601.vhd' on line 28, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'led_pkg.vhd' on line 1, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'led_pkg.vhd' on line 1, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'ledmod.vhd' on line 1, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'ledmod.vhd' on line 1, column 9.
+library IEEE;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> IEEE in file 'SKadder.vhd' on line 10, column 9.
+library IEEE;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> IEEE in file 'SKadder.vhd' on line 10, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'adder.vhd' on line 1, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'adder.vhd' on line 1, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'adder_pkg.vhd' on line 1, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'adder_pkg.vhd' on line 1, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library clause requires ';', read <identifier> ieee in file 'leon3mp.vhd' on line 24, column 9.
+library ieee;
+        |
+Error   : Missing token. [VHDLPT-672] [read_hdl]
+        : library unit requires ENTITY, ARCHITECTURE, PACKAGE, or CONFIGURATION, read <identifier> ieee in file 'leon3mp.vhd' on line 24, column 9.
+Failed on read_hdl -vhdl mig37/mig_37/user_design/rtl/iodrp_controller.vhd mig37/mig_37/user_design/rtl/iodrp_mcb_controller.vhd mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd mig37/mig_37/user_design/rtl/mcb_soft_calibration.vhd mig37/mig_37/user_design/rtl/mcb_soft_calibration_top.vhd mig37/mig_37/user_design/rtl/memc3_infrastructure.vhd mig37/mig_37/user_design/rtl/memc3_wrapper.vhd mig37/mig_37/user_design/rtl/mig_37.vhd config.vhd ahbrom.vhd ahb2mig_sp601.vhd led_pkg.vhd ledmod.vhd SKadder.vhd adder.vhd adder_pkg.vhd leon3mp.vhd
+rc:/> 

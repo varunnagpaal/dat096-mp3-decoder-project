@@ -1,0 +1,16 @@
+SOURCE mig37/mig_37/user_design/rtl/iodrp_controller.vhd
+SOURCE mig37/mig_37/user_design/rtl/iodrp_mcb_controller.vhd
+SOURCE mig37/mig_37/user_design/rtl/mcb_raw_wrapper.vhd
+SOURCE mig37/mig_37/user_design/rtl/mcb_soft_calibration.vhd
+SOURCE mig37/mig_37/user_design/rtl/mcb_soft_calibration_top.vhd
+SOURCE mig37/mig_37/user_design/rtl/memc3_infrastructure.vhd
+SOURCE mig37/mig_37/user_design/rtl/memc3_wrapper.vhd
+SOURCE mig37/mig_37/user_design/rtl/mig_37.vhd
+SOURCE config.vhd
+SOURCE ahbrom.vhd
+SOURCE ahb2mig_sp601.vhd
+SOURCE leon3mp.vhd
+SUBLIB grlib VhdlLibrary vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/version.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/config.vhd grlib vhdl
+LIBFILE /chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdlib.vhd grlib vhdl

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="1.3" title="leon3mp" device="XC6SLX45-3csg324" default_implementation="leon3mp">
+    <Options/>
+    <Implementation title="leon3mp" dir="lattice" description="leon3mp" default_strategy="Timing">
+        <Options/>
+        <Source name="/chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/version.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="/chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/config.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="/chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdlib.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="/chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdio.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="/chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/testlib.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="grlib"/>
+        </Source>

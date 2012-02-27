@@ -1,0 +1,7 @@
+INFILE=/chalmers/groups/cse-dat096-d3/DAC_leon/leon3-digilent-atlys/leon3mp.ncd
+OUTFILE=/chalmers/groups/cse-dat096-d3/DAC_leon/leon3-digilent-atlys/leon3mp.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=/chalmers/groups/cse-dat096-d3/DAC_leon/leon3-digilent-atlys
+LICENSE=ISE
+USER_INFO=__174110869_174110870_174416152

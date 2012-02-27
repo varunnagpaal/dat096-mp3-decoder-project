@@ -1,0 +1,5 @@
+	acom -quiet  -accept87 -work  grlib ../..//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/version.vhd
+	acom -quiet  -accept87 -work  grlib ../..//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/config.vhd
+	acom -quiet  -accept87 -work  grlib ../..//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdlib.vhd
+	acom -quiet  -accept87 -work  grlib ../..//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdio.vhd
+	acom -quiet  -accept87 -work  grlib ../..//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/testlib.vhd

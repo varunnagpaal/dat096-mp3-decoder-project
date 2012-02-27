@@ -1,0 +1,26 @@
+Release 13.2 - par O.61xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Mon Feb 27 13:01:23 2012
+
+All signals are completely routed.
+
+WARNING:ParHelpers:362 - There are 1 sourceless signals in this design. This design will not pass the DRC check run by
+   Bitgen.
+
+   flag_OBUF
+WARNING:ParHelpers:361 - There are 10 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/Mram_rfd1_RAMD_D1_O
+   eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/Mram_rfd2_RAMD_D1_O
+   eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/Mram_rfd3_RAMD_D1_O
+   eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/Mram_rfd4_RAMD_D1_O
+   eth0.e1/m100.u0/nft.rx_fifo0/xc2v.x0/a0.x0/Mram_rfd5_RAMD_D1_O
+   leon3gen.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/dataram/xc2v.x0/a0.r0/Mram_memarr1_RAMD_D1_O
+   leon3gen.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/dataram/xc2v.x0/a0.r0/Mram_memarr2_RAMD_D1_O
+   leon3gen.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/dataram/xc2v.x0/a0.r0/Mram_memarr3_RAMD_D1_O
+   leon3gen.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/dataram/xc2v.x0/a0.r0/Mram_memarr4_RAMD_D1_O
+   leon3gen.cpu[0].u0/p0/c0mmu/mmugen.m0/tlbcomb0.ctlb0/dataram/xc2v.x0/a0.r0/Mram_memarr5_RAMD_D1_O
+
+

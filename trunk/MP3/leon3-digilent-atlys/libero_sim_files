@@ -1,0 +1,5 @@
+LIST ExcludePackageForSynthesis
+LIST leon3mp
+VALUE "<project>//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/stdio.vhd,hdl"
+VALUE "<project>//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/stdlib/testlib.vhd,hdl"
+VALUE "<project>//chalmers/sw/unsup64/grlib-gpl-1.1.0-b4113/lib/grlib/util/util.vhd,hdl"

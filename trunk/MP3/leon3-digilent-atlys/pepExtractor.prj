@@ -1,0 +1,4 @@
+grlib	"../../lib/grlib/idct_hardware/IDCT_64.vhd"
+grlib	"../../lib/grlib/idct_hardware/vector_add.vhd"
+grlib	"../../lib/grlib/idct_hardware/vector_mul.vhd"
+grlib	"../../lib/grlib/idct_hardware/vector_sub.vhd"
